@@ -1,0 +1,26 @@
+.payments .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+.payments .image-gallery .image {
+  height: 200px;
+  width: 100%;
+}
+
+.payments .image-gallery .image.bag {
+  background: url(./img/bagagem.png) no-repeat center;
+  background-size: cover;
+}
+.payments .image-gallery .image.passaport {
+  background: url(./img/passaport.png) no-repeat center;
+  background-size: cover;
+}
+.payments .image-gallery .image.people {
+  background: url("./img/ponte com 2 pessoas.png") no-repeat center;
+  background-size: cover;
+}
+.payments .image-gallery .image.people.colspan-2 {
+  grid-column: span 2;
+}

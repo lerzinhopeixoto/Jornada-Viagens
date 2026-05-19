@@ -1,0 +1,150 @@
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  color: white;
+  width: 260px;
+  border-radius: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 24px 16px;
+  flex: 1;
+}
+
+.card header p {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.card header h3 {
+  color: white;
+  font-size: 36px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card header span {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 32px;
+}
+
+.card.japao {
+  background: url("./img/40ca8db8f9bca7acaa9df0b0ca65b464491aabfc.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.card.san-andreas {
+  background: url("./img/san andreas.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card.paraiba {
+  background: url("./img/Paraiba.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.card.manaus {
+  background: url("./img/8d6ce49e2180157651c7a5822773c1b64d64a6e9.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 420px;
+    height: 308px;
+  }
+  .card header h3 {
+    font-size: 40px;
+  }
+
+  .card header span {
+    font-size: 40px;
+  }
+}
+
+.categories-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 16px;
+  flex-wrap: wrap;
+}
+
+.categories-card {
+  background-color: #fff;
+  color: #222;
+  width: 120px;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.categories-card a {
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.categories-card img {
+  width: 48px;
+  height: 48px;
+}
+
+.categories-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 588px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    .offers-cards {
+      width: 1250px;
+      margin: 0 auto;
+    }
+  }
+}

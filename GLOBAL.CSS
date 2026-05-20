@@ -100,6 +100,16 @@ section.hero {
   text-align: center;
 }
 
+section.hero-blog {
+  width: 100%;
+  margin: 0;
+}
+
+section.blog-content {
+  width: 100%;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   section {
     width: 648px;
